@@ -38,6 +38,7 @@ body{
         padding-bottom: 24px;
         border-bottom: 1px solid #E7E9FC;
         display: flex;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
      }
      .header-nav {
         display: flex;
@@ -77,9 +78,11 @@ body{
     color:var(--brand-color-navy-blue);
     text-decoration: none;
 }
+
 .header-link:hover{
     color:var(--brand-color-grey);
 }
+
 .header-link:active{
     color: var(--brand-color-blue);
 }
@@ -124,6 +127,8 @@ body{
     padding: 188px 0;
     display: flex;
     justify-content: center;
+    max-width: 1440px;
+    margin: auto;
 }
 .banner-title {
     font-size: 56px;
@@ -175,26 +180,16 @@ body{
     gap: 24px;
 } 
 
-.advantages-icons-list {
-    display: flex;
-    list-style: none;
-    gap: 24px;
-}
-.advantages-icons-item {
+ .advantages-icon {
     background-color: #F4F4FD;
+    padding: 24px 100px;
     border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
+} 
+
+
+.advantages-item {
+    max-width: 264px;
 }
-/* .advantages-icon {
-} */
-
-
-/* .advantages-item {} */
 
 .advantages-title {
     font-size: 20px;
@@ -288,8 +283,7 @@ margin-bottom: 32px;
     padding-bottom: 32px;
 }
 .team-soc-link {
-    width: 100%;
-    height: 100%;
+    padding: 12px;
     background-color: var(--brand-color-blue);
     border-radius: 50%;
     display: flex;
@@ -362,7 +356,6 @@ margin-bottom: 32px;
     text-align: center;
     letter-spacing: 0.04em;
     cursor:pointer;
-    border: none;
     border-radius: 4px;
     height: 48px;
     padding: 12px 24px;
@@ -373,6 +366,9 @@ margin-bottom: 32px;
 .buttons-all{
     color: #FFFFFF;
     background-color: var(--brand-color-ocean);
+    border:none ;
+}
+.buttons-all:hover{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .buttons-btn {
@@ -381,7 +377,7 @@ margin-bottom: 32px;
     border: 1px solid #E7E9FC;
 }
 
-.buttons-btn:hover,:focus {
+.buttons-btn:hover{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
  
@@ -391,6 +387,10 @@ margin-bottom: 32px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+}
+
+.portfolio-item{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
  .portfolio-item:hover{
@@ -479,13 +479,16 @@ margin-bottom: 32px;
         align-items: center;
     }
     .footer-soc-link {
-        width: 100%;
-        height: 100%;
+        padding: 8px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #ffffff1a;
         border-radius: 50%;
+    }
+
+    .footer-soc-link:hover{
+        background-color: #31D0AA;
     }
     /* .footer-soc-icon{
 
